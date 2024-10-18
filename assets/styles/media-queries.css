@@ -1,0 +1,149 @@
+@media (max-width: 1220px) {
+    #man-logo img {
+        position: absolute;
+        max-width: 400px;
+    }
+}
+
+@media (max-width: 1120px) {
+
+    #logo {
+        margin-right: 100px;
+    }
+
+    #container-social {
+        width: auto;
+        position: absolute;
+        bottom: 50px;
+        left: 50px;
+    
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        
+        gap: 20px;
+    }
+
+    .item-social {
+        font-size: 0.8em;
+        width: 100%/4;
+  
+        align-items: center;
+        padding: 7px;
+        gap: 7px;
+    }
+
+    .content-item-social {
+        font-size:  0.9em;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 1080px) {
+    #container-social {
+        width: auto;
+        position: absolute;
+        bottom: 50px;
+        left: 50px;
+    
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        
+        gap: 20px;
+    }
+
+    .item-social {
+        font-size: 0.8em;
+        width: 100%/4;
+  
+        align-items: center;
+        padding: 7px;
+        gap: 7px;
+    }
+}
+
+@media (min-width: 814px) {
+    body {
+        overflow: hidden;
+    }
+}
+
+@media (max-width: 814px) {
+    #logo {
+        margin: 0;
+    }
+
+    header nav {
+        margin: 0;
+    }
+
+    #man-logo {
+        display: none;
+    }
+
+    #container-contact {
+        width: 100%;
+        margin: 0;
+        align-items: center;
+    }
+
+    #container-social {
+        width: 80%;
+        left: 50%;
+        bottom: 20px;
+        transform: translateX(-50%);
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+}
+
+@media (max-width: 690px) {
+    header {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+
+    header nav {
+        order: 1;
+        margin: 0;
+    }
+
+    #logo {
+        margin-right: 0;
+    }
+
+    main {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        padding-bottom: 50px;
+    }
+
+    #container-social {
+        transform: none;
+        position: static;
+        width: 90%;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+
+    #contact {
+        width: 90%;
+    }
+
+    #active-contacts {
+        width: 90%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #active-contacts div {
+        margin: 0;
+        align-self: flex-start;
+    }
+
+}
