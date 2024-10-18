@@ -6,13 +6,11 @@
 }
 
 @media (max-width: 1120px) {
-
     #logo {
         margin-right: 100px;
     }
 
     #container-social {
-        width: auto;
         position: absolute;
         bottom: 50px;
         left: 50px;
@@ -26,9 +24,6 @@
 
     .item-social {
         font-size: 0.8em;
-        width: 100%/4;
-  
-        align-items: center;
         padding: 7px;
         gap: 7px;
     }
@@ -42,25 +37,8 @@
 
 @media (max-width: 1080px) {
     #container-social {
-        width: auto;
-        position: absolute;
-        bottom: 50px;
-        left: 50px;
-    
-        display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
-        
-        gap: 20px;
-    }
-
-    .item-social {
-        font-size: 0.8em;
-        width: 100%/4;
-  
-        align-items: center;
-        padding: 7px;
-        gap: 7px;
     }
 }
 
@@ -92,7 +70,7 @@
     #container-social {
         width: 80%;
         left: 50%;
-        bottom: 20px;
+        bottom: 25px;
         transform: translateX(-50%);
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
@@ -145,5 +123,4 @@
         margin: 0;
         align-self: flex-start;
     }
-
 }

@@ -124,7 +124,6 @@ header a:hover::after {
 #logo img {
     width: 50px;
     filter: drop-shadow(1px 1px 1px  rgb(173, 65, 80));
-    /* filter: drop-shadow(1px 1px 2px rgb(173, 65, 80)); */
 }
 
 /* ================================ MAIN ================================ */
@@ -222,47 +221,6 @@ input:hover {
     outline: 1px solid var(--background-default);
 }
 
-#container-social {
-    position: absolute;
-    bottom: 50px;
-    left: 50px;
-
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-
-    gap: 25px;
-}
-
-.item-social {
-    background-color: rgba(0, 0, 0, 0.3);
-    padding: 7px;
-    border-radius: 10px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 7px;
-}
-
-.content-item-social {
-    font-size: clamp(0.8em, 1.4vw, 16px);
-    display: flex;
-    flex-direction: column;
-}
-
-.container-icon-social {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.item-social i {
-    color: var(--background-default);
-    font-size: 1.2em;
-    padding: 7px;
-    border-radius: 50%;
-    background-color: white;
-}
-
 #active-contacts {
     width: 60%;
     top: 320px;
@@ -304,4 +262,45 @@ input:hover {
     background-color: var(--background-default);
     outline: 1px solid white;
     box-shadow: 1px 1px 10px 5px var(--blue-default);
+}
+
+#container-social {
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
+    gap: 25px;
+}
+
+.item-social {
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 7px;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+}
+
+.content-item-social {
+    font-size: clamp(0.8em, 1.4vw, 16px);
+    display: flex;
+    flex-direction: column;
+}
+
+.container-icon-social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.item-social i {
+    color: var(--background-default);
+    font-size: 1.2em;
+    padding: 7px;
+    border-radius: 50%;
+    background-color: white;
 }
