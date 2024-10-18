@@ -16,7 +16,7 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.1em;
-    background: var(--background-default) url(../images/background-de.png) no-repeat center center/cover;
+    background: var(--background-default) url(../images/background.png) no-repeat center center/cover;
     color: white;
     width: 100%;
     min-height: 100vh;
@@ -157,7 +157,7 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: flex-end;
-    margin-right: 6%;
+    margin-right: 110px;
     gap: 20px;
 }
 
@@ -170,7 +170,7 @@ main {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    border-radius: 20px;
+    border-radius: 10px;
 }
 
 #contact::before {
@@ -180,7 +180,7 @@ main {
     left: -3px;
     right: -3px;
     bottom: -3px;
-    border-radius: 22px; 
+    border-radius: 12px; 
     background: linear-gradient(to right, #004aad, #cb6cec);
     z-index: -1; 
 }
